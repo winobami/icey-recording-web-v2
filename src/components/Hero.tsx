@@ -1,5 +1,7 @@
 'use client';
 
+import { IMAGES } from "@/lib/constants";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -30,7 +32,7 @@ export default function Hero() {
         {/* Logo */}
         <div className="animate-fade-up opacity-0 mb-12">
           <img
-            src="/logo.png"
+            src={IMAGES.logo}
             alt="Icey Recording"
             className="w-32 h-32 md:w-44 md:h-44 object-contain opacity-90 glow-purple"
           />

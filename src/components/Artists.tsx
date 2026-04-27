@@ -1,5 +1,7 @@
 'use client';
 
+import { IMAGES } from "@/lib/constants";
+
 export default function Artists() {
   return (
     <section id="artists" className="relative py-32 px-6">
@@ -18,7 +20,7 @@ export default function Artists() {
           <div className="relative flex-shrink-0 group">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border border-white/5 glow-purple">
               <img
-                src="/winobami.jpeg"
+                src={IMAGES.winobami}
                 alt="Win Obami"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               />

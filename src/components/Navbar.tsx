@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import { IMAGES } from "@/lib/constants";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
           <img
-            src="/logo.png"
+            src={IMAGES.logo}
             alt="Icey Recording"
             className="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
           />

@@ -1,5 +1,7 @@
 'use client';
 
+import { IMAGES } from "@/lib/constants";
+
 export default function Footer() {
   return (
     <footer id="join" className="relative py-24 px-6 border-t border-white/5">
@@ -17,7 +19,7 @@ export default function Footer() {
           {/* Logo + Label Info */}
           <div className="text-center md:text-left">
             <img
-              src="/logo.png"
+              src={IMAGES.logo}
               alt="Icey Recording"
               className="h-12 w-auto opacity-70 mb-4 mx-auto md:mx-0"
             />
